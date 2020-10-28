@@ -1,0 +1,242 @@
+/* Limpando as formatações padrões*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+*:focus{
+    outline: none;
+    box-shadow: 0 0 3pt 2pt #477fb9;
+}
+body {
+  font-size: 1em;
+  background: #e6e6e6;
+}
+
+/* Formatação do cabeçalho*/
+#header {
+  background-color: #477fb9;
+  padding: 15px;
+  text-align: center;
+}
+#logo,
+#menu,
+#menu-area-restrita {
+  padding: 10px;
+}
+#logo h1 {
+  color: #4e4e4e;
+  font-size: 2.5em;
+}
+h1 img {
+  width: 40px;
+}
+.span {
+  color: #ecc100;
+}
+/* Formatação do cabeçalho/Menu*/
+
+#menu a {
+  text-decoration: none;
+}
+#menu a:link,
+#menu a:visited {
+  color: #ffffff;
+  padding: 8px 12px;
+}
+#menu a:hover {
+  color: #477fb9;
+  background: #ffffff;
+  transition: background 800ms;
+}
+/* Formatação do conteudo principal*/
+#container-conteudos, #container-conteudos-restrita, #principal {
+  width: 920px;
+  margin: 0 auto;
+  padding: 15px;
+}
+#conteudo, #conteudo-restrito {
+  width: 660px;
+  float: left;
+  background: #ffffff;
+}
+#conteudo a, #conteudo-restrito a {
+  text-decoration: none;
+  color: #000000;
+}
+.post {
+  padding: 20px;
+}
+.post h2 {
+  color: #477fb9;
+}
+.post img {
+  width: 620px;
+  height: 400px;
+}
+.data-post {
+  font-size: 0.8em;
+  border-bottom: 1px solid #477fb9;
+  margin-bottom: 5px;
+  display: block;
+}
+.noticia {
+  width: 196px;
+  margin: 10px;
+  float: left;
+}
+.imagem-galeria img {
+  width: 196px;
+  margin: 5px;
+}
+.noticia h4 {
+  margin: 5px;
+  min-height: 88px;
+
+}
+.noticia button, .noticia a {
+  border: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 10px;
+  color: #ffffff;
+}
+.noticia #apagar {
+  color: #ffffff;
+  background: #d9534f;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+.noticia #editar, #editar {
+  color: black;
+  background: #ffcc00;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+.noticia #visualizar {
+  color: #ffffff;
+  background: #428bca;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+/* Formatação do conteudo principal - div lateral*/
+#lateral {
+  width: 240px;
+  float: right;
+}
+#lateral a , .link-menu{
+  text-decoration: none;
+  color: #000000;
+}
+.conteudo-lateral {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.conteudo-lateral  h3,  #conteudo-botao-restrito h3, #conteudo-botao h3, #lateral h3{
+  color: #477fb9;
+  background: #ccc;
+  padding: 5px;
+}
+#conteudo-botao-restrito{
+    border: 1px black dotted;
+}
+.conteudo-lateral ul {
+  list-style-type: none;
+}
+.conteudo-lateral i {
+  margin-right: 15px;
+}
+.conteudo-lateral li {
+  font-size: 24px;
+  margin: 5px;
+}
+.post-lateral {
+  font-size: 0.8em;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+#conteudo-botao, #conteudo-botao-restrito {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#conteudo-botao button {
+  color: white;
+  border: 0;
+  background: #24a0ed;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+#conteudo-botao button:hover,
+#conteudo-botao button:active {
+  background: #1980ee;
+  transition: background 200ms;
+}
+
+#conteudo-botao-restrito #escrever {
+    color: white;
+    border: 0;
+    background: #24a0ed;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px auto;
+    border-radius: 10px;
+  }
+  
+  #conteudo-botao-restrito a:hover,
+  #conteudo-botao-restrito a:active {
+    background: #1980ee;
+    transition: background 200ms;
+  }
+
+#conteudo-botao-restrito #sair {
+    background: #bb2124;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 0;
+  }
+  
+  #conteudo-botao-restrito #sair:hover,
+  #conteudo-botao-restrito #sair:active {
+    background: red;
+    transition: background 200ms;
+  }
+
+.input-block input {
+  width: 100%;
+  height: 1.5em;
+}
+
+/* Formatação do conteudo principal - rodape*/
+#footer {
+  clear: both;
+  background: #477fb9;
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+}

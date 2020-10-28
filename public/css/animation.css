@@ -1,0 +1,43 @@
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes right-left {
+    from {
+      transform: translateX(70%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+}
+@keyframes left-right {
+    from {
+      transform: translateX(-70%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+}
+.animate-appear{
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+    animation-delay: 50ms;
+}
+.animate-right-left {
+    animation-name: right-left;
+    animation-duration: 700ms;
+    animation-delay: 50ms;
+}
+.animate-left-right {
+    animation-name: left-right;
+    animation-duration: 700ms;
+    animation-delay: 50ms;
+}

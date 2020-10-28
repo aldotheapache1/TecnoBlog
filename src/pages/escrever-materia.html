@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TecnoBlog - Escrever Matéria</title>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/page-escrever-materia.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2017/03/25/03/59/blogger-2172746_1280.png"
+        type="image/icon type" />
+</head>
+
+<body>
+    <div class="animate-appear" id="header">
+        <div id="logo">
+            <h1>
+                <img src="https://cdn.pixabay.com/photo/2017/03/25/03/59/blogger-2172746_1280.png" alt="" />
+                <span class="span">Tecno</span>Blog
+            </h1>
+        </div>
+    </div>
+    <div id="principal">
+            <fieldset>
+                <legend>Matéria</legend>
+                <div class="input-block">
+                    <label for="titulo">Titulo</label>
+                    <input id="titulo" name="titulo" required />
+                </div>
+
+                <div class="input-block">
+                    <label for="descricao">Descrição</label>
+                    <input id="descricao" name="descricao" maxlength="50" required></input>
+                </div>
+
+                <div class="input-block">
+                    <label for="textoMateria">Texto da Matéria</label>
+                    <textarea id="textoMateria" name="textoMateria" required></textarea>
+                </div>
+                <div class="input-block">
+                    <label for="imagem">link da Imagem</label>
+                    <input id="imagem" name="imagem" required />
+                </div>
+                <div class="input-block">
+                    <label for="type">Assunto da Máteria</label><br>
+                    <select name="type" id="type">
+                        <option value="Tecnologia">Tecnologia</option>
+                        <option value="Jogos">Jogos</option>
+                      </select>
+                </div>
+                <button type='button' onclick='getParams()' class='confirmar'>Confirmar</button>
+                <button onclick="history.back()" class="voltar">Voltar</button>
+            </fieldset>
+    </div>
+    <div id="footer">Todos os Direitos Reservados &copy; 2020</div>
+    <script src="../../public/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="../../public/js/escrever-materia.js"></script>
+</body>
+
+</html>
