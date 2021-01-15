@@ -4,7 +4,7 @@
 
 ## Index
 <p align="center">
-  <img alt="index" src=".github/index.png" width="100%">
+  <img alt="index" src=".github/index.png" width="75%">
 </p>
 
 ## 🚀 Tecnologias
