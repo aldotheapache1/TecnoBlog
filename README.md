@@ -3,6 +3,17 @@
 </h1>
 
 <p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+<p align="center">
+  <img alt="language count" src="https://img.shields.io/github/languages/count/aldotheapache1/TecnoBlog">
+  <img alt="top language" src="https://img.shields.io/github/languages/top/aldotheapache1/TecnoBlog">
+  <img alt="last commit" src="https://img.shields.io/github/last-commit/aldotheapache1/TecnoBlog">
+</p>
+
+<p align="center">
   <img alt="index" src=".github/index.png" width="75%">
 </p>
 
