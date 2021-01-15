@@ -1,8 +1,7 @@
 <h1 align="center">
-    <img alt="Tecnoblog" title="Tecnoblog" src=".github/logo.png" />
+    <img alt="Tecnoblog" title="Tecnoblog" src=".github/logo.png" width="75%" />
 </h1>
 
-## Index
 <p align="center">
   <img alt="index" src=".github/index.png" width="75%">
 </p>
@@ -22,15 +21,15 @@ Tecnoblog é um site de tecnologia que apresenta os assuntos mais variados, Ness
 
 ## Área Restrita
 <p align="center">
-  <img alt="area-restrita" src=".github/area-restrita.png" width="100%">
+  <img alt="area-restrita" src=".github/area-restrita.png" width="75%">
 </p>
 
 ## Visualizar Matéria
 <p align="center">
-  <img alt="visualizar" src=".github/visualizar-materia.png" width="100%">
+  <img alt="visualizar" src=".github/visualizar-materia.png" width="75%">
 </p>
 
 ## Escrever Matéria
 <p align="center">
-  <img alt="escrever" src=".github/escrever-materia.png" width="100%">
+  <img alt="escrever" src=".github/escrever-materia.png" width="75%">
 </p>
