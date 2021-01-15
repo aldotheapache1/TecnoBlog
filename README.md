@@ -2,14 +2,23 @@
     <img alt="Tecnoblog" title="Tecnoblog" src=".github/logo.png" />
 </h1>
 
-## 🚀 Objetivo
-Esse projeto consiste em um blog de tecnologia que permite escrever, editar, remover e visualizar materias do blog.
-É utilizado HTML, JavaScript e CSS para consumir a API [TecnoBlog-Back-End](https://github.com/aldotheapache1/TecnoBlog-Back-End)
-
 ## Index
 <p align="center">
   <img alt="index" src=".github/index.png" width="100%">
 </p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [JavaScript](https://www.javascript.com/)
+
+## 💻 Projeto
+
+Tecnoblog é um site de tecnologia que apresenta os assuntos mais variados, Nesse projeto é possivel escrever, editar, remover e visualizar materias do blog.
+É utilizado HTML, JavaScript e CSS para consumir a API [TecnoBlog-Back-End](https://github.com/aldotheapache1/TecnoBlog-Back-End)
 
 ## Área Restrita
 <p align="center">
