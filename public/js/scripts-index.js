@@ -2,6 +2,7 @@ $(document).ready(function(){
     console.clear();
     readAllArticle();
     readAllArticleLateral();
+ 
   });
 
 
@@ -30,7 +31,8 @@ function createTable(data){
     if(data.length < 1)
     return;
   
-    var valor = data.length/2;
+    if(data.length > 1)
+    var valor = Math.ceil(data.length/2);
     var conteudoLateral = document.getElementById("conteudo-lateral");
     conteudoLateral.innerHTML = "";
   
@@ -76,36 +78,33 @@ function readAllArticle(){
       }
     });
   }
-  function readAllUser(usuario, senha){
-    $.ajax({
-      url : "http://127.0.0.1:8000/api/users",
-      type : "GET",
-      data : {},
-      dataType : "JSON",
-      success : function(data){
-        console.table(data);
-        if(data.length < 1)
-        return;
-        for(var i = 0; i <  data.length; i++){
-          console.log(data[i].email + data[i].pass);
-          if(data[i].email == usuario &&  data[i].pass == senha)
-            window.location.href = "../../src/pages/area-restrita.html";
-          else
-            window.location.href = "index.html";
-        }
-        
-      },
-      error : function(error){
-        console.log(error);
-      }
-    });
+  
+  function getParams(){
+    var email = document.getElementById('usuario').value;
+    var password = document.getElementById('senha').value;
+    console.log(email);
+
+    var obj = {
+      email : email,
+      password : password
+      };
+      login(obj);
   }
 
-  function login(){
-    var usuario = document.getElementById('usuario').value;
-    var senha = document.getElementById('senha').value;
-    if(usuario == "" || senha== "")
-      return;
-    else
-      readAllUser(usuario, senha);
+  function login(obj){
+    $.ajax({
+      url : "http://127.0.0.1:8000/api/auth/login",
+      type : "POST",
+      data : obj,
+      dataType : "json",
+      success : function(data){
+        localStorage.setItem ('access_token', data.access_token);
+        localStorage.setItem ('token_type', data.token_type);
+        window.location.href = "../../src/pages/area-restrita.html";
+    },
+    error : function(error){
+      console.log(error);
+      alert("Usuário ou senha incorretos");;
+    }
+  });
   };

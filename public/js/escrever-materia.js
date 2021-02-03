@@ -9,7 +9,6 @@ function getParams(){
     var textoMateria = document.getElementById('textoMateria').value;
     var imagem = document.getElementById('imagem').value;
     var type = document.getElementById('type').value;
-    console.log(imagem);
 
     var obj = {
         title : titulo,
@@ -23,16 +22,16 @@ function getParams(){
 
   function save(obj){
     $.ajax({
-      url : "http://127.0.0.1:8000/api/articles?title=" + obj.title +"&description=" + obj.description +"&text=" + obj.text +"&directoryImage=" + obj.directoryImage +"&type=" + obj.type,
+      headers: {"Authorization":  'Bearer ' + localStorage.getItem('access_token')},
+      url : "http://127.0.0.1:8000/api/article?title=" + obj.title +"&description=" + obj.description +"&text=" + obj.text +"&directoryImage=" + obj.directoryImage +"&type=" + obj.type,
       type : "POST",
       data : obj,
-      dataType : "json",
       success : function(data){
         window.location.href = "../../src/pages/area-restrita.html";
     },
     error : function(error){
       console.log(error);
-      window.location.href = "../../src/pages/area-restrita.html";
+      //window.location.href = "../../src/pages/area-restrita.html";
     }
   });
 }

@@ -16,7 +16,7 @@ function createTable(data){
             "<div class='post'>"+
             "<h2>"+ data[i].title +"</h2>"+
             "<span class='data-post'> Publicado em: "+ data[i].created_at +"</span>"+
-            "<img src='"+ data[i].directoryImage +"' />"+
+            "<img src='../../"+ data[i].directoryImage +"' />"+
             "<p>"+ data[i].description +"</p>"+
             "</div>"+
             "</a>";

@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   function readById(id){
     $.ajax({
-      url : "http://127.0.0.1:8000/api/articles/" + id,
+      url : "http://127.0.0.1:8000/api/article/" + id,
       data : {},
       type : "GET",
       dataType : "JSON",
@@ -28,7 +28,7 @@ $(document).ready(function(){
     "<div class='post'>"+
     "<h2>"+ data.title +"</h2>"+
     "<span class='data-post'> Publicado em: "+ data.created_at +"</span>"+
-    "<img src='"+ data.directoryImage +"' />"+
+    "<img src='../../"+ data.directoryImage +"' />"+
     "<p>"+ data.description +"</p>"+
     "<p>"+ data.text +"</p>"+
     "</div>";

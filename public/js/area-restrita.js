@@ -14,12 +14,11 @@ function createTable(data){
     for(var i = 0; i < data.length; i++){
         var col = "<div class='noticia'>"+
         "<div class='imagem-galeria'>"+
-        "<img src='"+ data[i].directoryImage +"' />"+
+        "<img src='../../"+ data[i].directoryImage +"' />"+
         "</div>"+
         "<h4>"+ data[i].title +"</h2>"+
         "<button type='button' id='apagar' onclick='confirmDelete("+ data[i].id +")'>Apagar</button>"+
         "<a id='editar' href='editar-materia.html?id="+ data[i].id +"'>Editar</a>"+
-        "<a type='button' id='visualizar' href='visualizar-materia.html?id="+ data[i].id +"'>Visualizar</a>"+
         "</div>";
 
         conteudo.innerHTML += col;
@@ -64,4 +63,17 @@ function readAllArticle(){
     return;
     console.log(id);
     deleteArticle(id);
+  }
+
+  function logout(){ 
+    $.ajax({
+      headers: {"Authorization":  'Bearer ' + localStorage.getItem('access_token')},
+      url : "http://127.0.0.1:8000/api/auth/logout",
+      type : "POST",
+      success : function(data){
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('token_type');
+        window.location.href = "../../index.html";
+      }
+    });
   }

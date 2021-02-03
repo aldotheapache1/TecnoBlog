@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 function readById(id){
     $.ajax({
-      url : "http://127.0.0.1:8000/api/articles/" + id,
+      url : "http://127.0.0.1:8000/api/article/" + id,
       data : {},
       type : "GET",
       dataType : "JSON",
@@ -70,17 +70,13 @@ function readById(id){
 
       function update(obj){
         $.ajax({
-          url : "http://127.0.0.1:8000/api/articles/" + obj.id,
+          url : "http://127.0.0.1:8000/api/article/" + obj.id,
+          headers: {"Authorization":  'Bearer ' + localStorage.getItem('access_token')},
           type : "PUT",
           data : obj,
-          dataType : "json",
-          success : function(data){
+          success : function(data){ 
             window.location.href = "../../src/pages/area-restrita.html";
-        },
-        error : function(error){
-          console.log(error);
-          window.location.href = "../../src/pages/area-restrita.html";
-        }
+          }
       });
     }
 

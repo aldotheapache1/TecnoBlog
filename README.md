@@ -1,5 +1,5 @@
 <h1 align="center">
-   TecnoBlog
+  <img src=".github/logo.svg"></img>
 </h1>
 
 <p align="center">
@@ -31,16 +31,19 @@ Tecnoblog é um site de tecnologia que apresenta os assuntos mais variados, Ness
 É utilizado HTML, JavaScript e CSS para consumir a API [TecnoBlog-Back-End](https://github.com/aldotheapache1/TecnoBlog-Back-End)
 
 ## Área Restrita
+
 <p align="center">
   <img alt="area-restrita" src=".github/area-restrita.png" width="75%">
 </p>
 
 ## Visualizar Matéria
+
 <p align="center">
   <img alt="visualizar" src=".github/visualizar-materia.png" width="75%">
 </p>
 
 ## Escrever Matéria
+
 <p align="center">
   <img alt="escrever" src=".github/escrever-materia.png" width="75%">
 </p>
