@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Tecnoblog" title="Tecnoblog" src=".github/logo.png" width="75%" />
+   TecnoBlog
 </h1>
 
 <p align="center">
